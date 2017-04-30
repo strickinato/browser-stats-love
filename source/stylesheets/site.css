@@ -1,9 +1,11 @@
-* {
+
+
+/** {
   border: 1px solid red;
-}
+}*/
 
 body {
-  background-color: white;
+  background-color: #F8F8F8;
   color: #22222;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
@@ -16,8 +18,8 @@ body {
   display: flex;
   justify-content: space-between;
   color: #7b7b85;
-
-
+  position: sticky;
+  top: 0px;
 }
 
 .site-title, .site-updated {
@@ -28,42 +30,53 @@ body {
 .data-card {
   background-color: white;
   width: 320px;
-  height: 410px;
+  height: 384px;
   margin: auto;
-  margin-top: 120px;
   border-radius: 4px;
-  box-shadow: 0 0px 1px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
 
+.resolution-stats {
+  margin-top: 120px;
 }
 
 table {
   width: 100%;
+  color: #7B7B85;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+tr:last-child {
+  border-bottom: none;
 }
 
 tr {
   height: 64px;
-}
-
-td{
-  width: 25%;
-}
-
-td.pct {
-  text-align: left;
-  width: 50%;
-
-}
-
-td.browser {
-  text-align: left;
-  line-height: 64px;
-  padding-left: 16px;
-  margin-bottom: 32px;
-
+  border-bottom: 1px solid #D2D2D6;
 }
 
 th {
   width: 100%;
+  letter-spacing: 8px;
+}
+
+td.pct {
+  width: 160px;
+  font-size: 24px;
+  color: #50505d;
+}
+
+td.icon-column {
+  width: 48px;
+}
+
+td.browser {
+  width: 112px;
+  line-height: 64px;
+  margin-bottom: 32px;
+  text-align: left;
+
 }
 
 .icon {
@@ -71,9 +84,7 @@ th {
   height: 32px;
   width: 32px;
   border-radius: 50%;
-
-
-
+  visibility: hidden;
 }
 
 
@@ -81,6 +92,16 @@ th {
   margin: auto;
   border-bottom: 1px solid #D2D2D6;
   line-height: 64px;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
   font-size: 24px;
+}
+
+.credits {
+  margin-top: 96px;
+  margin-bottom: 48px;
+
+}
+
+.cards {
+  padding-top: 96px;
 }
