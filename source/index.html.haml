@@ -1,0 +1,30 @@
+---
+title: browserstats.love
+---
+
+%h1 browserstats.love
+
+
+- web_browser = "Web Browser"
+%h2= web_browser
+
+- browser_data[web_browser].each do |browser, pct|
+  %p= "#{browser}: #{pct}%"
+
+- screen_resolution= "Screen Resolution"
+%h2= screen_resolution
+- browser_data[screen_resolution].each do |resolution, pct|
+  %p= "#{resolution}: #{pct}%"
+
+
+%h2
+  Info from
+  =browser_data["last_update"]
+  from
+  =link_to browser_data["data_source"]["name"], browser_data["data_source"]["url"]
+
+%h2
+  Made with 💨 by
+  = "#{link_to "Toby", "http://design.tobysilverman.com"}, #{ link_to "Ben", "http://benpepin.com" },"
+  and
+  = link_to "Aaron", "http://aaronstrick.com"
