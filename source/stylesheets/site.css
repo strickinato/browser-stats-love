@@ -1,6 +1,17 @@
 body {
-  background-color: #f44274;
-  color: #222;
+  background-color: white;
+  color: #22222;
   font-family: "Consolas", monospace;
   text-align: center;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 0px 1px 0px rgba(0, 0, 0, 0.15);
+  height: 64px;
+
+}
+
+.site-title, .site-updated {
+  line-height: 64px;
 }

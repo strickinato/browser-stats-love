@@ -2,7 +2,11 @@
 title: browserstats.love
 ---
 
-%h1 browserstats.love
+%section.header
+  %h2.site-title ❤️ browserstats.love
+  %h2.site-updated
+    Last Updated
+    =browser_data["last_update"]
 
 
 - web_browser = "Web Browser"
@@ -19,12 +23,11 @@ title: browserstats.love
 
 %h2
   Info from
-  =browser_data["last_update"]
   from
   =link_to browser_data["data_source"]["name"], browser_data["data_source"]["url"]
 
 %h2
-  Made with 💨 by
+  Made with ♥ by
   = "#{link_to "Toby", "http://design.tobysilverman.com"}, #{ link_to "Ben", "http://benpepin.com" },"
   and
   = link_to "Aaron", "http://aaronstrick.com"
