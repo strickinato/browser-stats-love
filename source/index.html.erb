@@ -10,17 +10,15 @@ title: browserstats.love
 
 <div class="data-card">
     <table>
-        <th class="data-card-header" colspan="2">BROWSER</th>
+        <th class="data-card-header" colspan="3">BROWSER</th>
 
 
         <!--running the ruby  -->
         <% browser_data["Web Browser"].each do |browser, pct| %>
             <tr>
                 <td class="pct"><%= pct %></td>
-                <td class="browser">
-                    <div class="icon"> </div>
-                    <%= browser.upcase %>
-                </td>
+                <td class="icon-column"><div class="icon"> </div> </td>
+                <td class="browser"><%= browser.upcase %></td>
             </tr>
         <% end %>
 
@@ -31,7 +29,7 @@ title: browserstats.love
 
 <div class="data-card">
     <table>
-        <th class="data-card-header" colspan="2">RESOLUTION</th>
+        <th class="data-card-header" colspan="3">RESOLUTION</th>
 
 
         <!--running the ruby  -->

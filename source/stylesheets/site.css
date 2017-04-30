@@ -27,7 +27,7 @@ body {
 
 .data-card {
   background-color: white;
-  width: 300px;
+  width: 320px;
   height: 410px;
   margin: auto;
   margin-top: 120px;
@@ -44,13 +44,21 @@ tr {
   height: 64px;
 }
 
+td{
+  width: 25%;
+}
+
 td.pct {
-  text-align: right;
+  text-align: left;
+  width: 50%;
+
 }
 
 td.browser {
   text-align: left;
   line-height: 64px;
+  padding-left: 16px;
+  margin-bottom: 32px;
 
 }
 
@@ -63,6 +71,7 @@ th {
   height: 32px;
   width: 32px;
   border-radius: 50%;
+
 
 
 }
