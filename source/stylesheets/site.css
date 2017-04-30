@@ -45,11 +45,21 @@ td.pct {
 }
 
 td.browser {
-  text-align: center;
+  text-align: left;
+  background-color: red;
+  line-height: 64px;
+
+}
+
+.icon {
+  background-color: blue;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+
 
 }
 
 table {
-
-
+  width: 100%;
 }

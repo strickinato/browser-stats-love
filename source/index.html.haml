@@ -17,7 +17,11 @@ title: browserstats.love
     - browser_data[web_browser].each do |browser, pct|
       %tr
         %td.pct=pct
-        %td.browser=browser.upcase
+        %td.browser
+          .icon
+          =browser.upcase
+
+
 
 
 
