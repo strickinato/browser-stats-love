@@ -76,5 +76,8 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
+  activate :asset_hash
+
+  activate :asset_host, :host => '//diiw6giofs1ow.cloudfront.net'
 end
 
