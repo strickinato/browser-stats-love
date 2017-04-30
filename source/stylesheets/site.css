@@ -1,17 +1,55 @@
+* {
+  border: 1px solid red;
+}
+
 body {
   background-color: white;
   color: #22222;
-  font-family: "Consolas", monospace;
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .header {
   background-color: white;
   box-shadow: 0 0px 1px 0px rgba(0, 0, 0, 0.15);
   height: 64px;
+  display: flex;
+  justify-content: space-between;
+  color: #7b7b85;
+
 
 }
 
 .site-title, .site-updated {
   line-height: 64px;
+  padding: 0px 20px;
+}
+
+.browser-card {
+  background-color: white;
+  width: 300px;
+  height: 410px;
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 4px;
+  box-shadow: 0 0px 1px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+tr {
+  height: 64px;
+}
+
+td.pct {
+  text-align: right;
+}
+
+td.browser {
+  text-align: center;
+
+}
+
+table {
+
+
 }

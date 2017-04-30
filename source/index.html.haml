@@ -3,17 +3,23 @@ title: browserstats.love
 ---
 
 %section.header
-  %h2.site-title ❤️ browserstats.love
+  %h2.site-title ❤️    browserstats.love
   %h2.site-updated
     Last Updated
     =browser_data["last_update"]
 
 
 - web_browser = "Web Browser"
-%h2= web_browser
+.browser-card
+  %table
+    %th= web_browser
 
-- browser_data[web_browser].each do |browser, pct|
-  %p= "#{browser}: #{pct}%"
+    - browser_data[web_browser].each do |browser, pct|
+      %tr
+        %td.pct=pct
+        %td.browser=browser.upcase
+
+
 
 - screen_resolution= "Screen Resolution"
 %h2= screen_resolution
