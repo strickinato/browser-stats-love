@@ -16,7 +16,7 @@ class GetBrowserData < Middleman::Extension
         "Screen Resolution" => {
           "1366x768" => "35",
           "1920x1080" => "17",
-          "1280x1024" => "1024",
+          "1280x1024" => "5",
           "1280x800" => "4",
           "Other" => "39"
         },
