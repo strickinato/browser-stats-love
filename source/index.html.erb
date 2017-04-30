@@ -7,11 +7,14 @@ title: browserstats.love
     <h2 class="site-updated">Last Updated <%= browser_data["last_update"] %></h2>
 </section>
 
-<% web_browser = "Web Browser" %>
-<div class="browser-card">
+
+<div class="data-card">
     <table>
-        <th><%= web_browser %></th>
-        <% browser_data[web_browser].each do |browser, pct| %>
+        <th class="data-card-header" colspan="2">BROWSER</th>
+
+
+        <!--running the ruby  -->
+        <% browser_data["Web Browser"].each do |browser, pct| %>
             <tr>
                 <td class="pct"><%= pct %></td>
                 <td class="browser">
@@ -20,16 +23,19 @@ title: browserstats.love
                 </td>
             </tr>
         <% end %>
-        </th>
+
+
     </table>
 </div>
 
 
-<% screen_resolution = "Screen Resolution" %>
-<div class="browser-card">
+<div class="data-card">
     <table>
-        <th><%= screen_resolution %></th>
-        <% browser_data[screen_resolution].each do |resolution, pct| %>
+        <th class="data-card-header" colspan="2">RESOLUTION</th>
+
+
+        <!--running the ruby  -->
+        <% browser_data["Screen Resolution"].each do |resolution, pct| %>
             <tr>
                 <td class="pct"><%= pct %></td>
                 <td class="browser">
@@ -37,7 +43,8 @@ title: browserstats.love
                 </td>
             </tr>
         <% end %>
-        </th>
+
+
     </table>
 </div>
 
