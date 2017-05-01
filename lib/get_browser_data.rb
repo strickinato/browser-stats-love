@@ -10,8 +10,8 @@ class GetBrowserData < Middleman::Extension
           "Chrome" => "90",
           "Firefox" => "14",
           "Safari" => "5",
-          "Other" => "2",
-          "IE/Edge" => "4"
+          "IE/Edge" => "4",
+          "Other" => "2"
         },
         "Screen Resolution" => {
           "1366x768" => "35",
@@ -26,6 +26,24 @@ class GetBrowserData < Middleman::Extension
           "url" => "https://www.w3schools.com/Browsers/default.asp"
         }
       }
+    end
+
+    def get_asset(browser)
+      case browser
+      when "Chrome"
+        "chrome.svg"
+      when "Firefox"
+        "firefox.svg"
+      when "Safari"
+        "safari.svg"
+      when "IE/Edge"
+        "ie.svg"
+      when "Other"
+        "chrome.svg"
+      else
+        # Won't happen
+        ""
+      end
     end
   end
 end

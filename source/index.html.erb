@@ -2,46 +2,45 @@
 title: browserstats.love
 ---
 
-<section class="header">
+<section class="top-bar">
     <h2 class="site-title">❤️    browserstats.love</h2>
     <h2 class="site-updated">Last Updated <%= browser_data["last_update"] %></h2>
 </section>
 
-<section class="cards">
-  <div class="data-card browser-stats">
+<section class="card-section">
+
+  <div class="card browser-stats">
       <table>
-          <th class="data-card-header" colspan="3">BROWSER</th>
+          <th class="card-header" colspan="3">BROWSER</th>
 
-
-          <!--running the ruby  -->
+          <!--start running the ruby  -->
           <% browser_data["Web Browser"].each do |browser, pct| %>
               <tr>
-                  <td class="pct"><%= pct %>%</td>
-                  <td class="icon-column"><div class="icon"> </div> </td>
-                  <td class="browser"><%= browser.upcase %></td>
+                  <td class="percent-column"><%= pct %>%</td>
+                  <td class="icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                  <td class="browser-column"><%= browser.upcase %></td>
               </tr>
           <% end %>
-
+          <!--end running the ruby  -->
 
       </table>
   </div>
 
 
-  <div class="data-card resolution-stats">
+  <div class="card resolution-card">
       <table>
-          <th class="data-card-header" colspan="3">RESOLUTION</th>
-
+          <th class="card-header" colspan="3">RESOLUTION</th>
 
           <!--running the ruby  -->
           <% browser_data["Screen Resolution"].each do |resolution, pct| %>
               <tr>
-                  <td class="pct"><%= pct %>%</td>
-                  <td class="browser">
+                  <td class="percent-column"><%= pct %>%</td>
+                  <td class="browser-column">
                       <%= resolution.upcase %>
                   </td>
               </tr>
           <% end %>
-
+          <!--end running the ruby  -->
 
       </table>
   </div>
