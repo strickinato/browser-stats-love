@@ -17,6 +17,23 @@ a {
   color: #FB433C;
 }
 
+/** {
+  background parralax
+}*/
+.parallax {
+    /* The image used */
+    background-image: linear-gradient(#F4887B, #FFF9BA);
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* when we don't wrap the link in a little container, then it
 is all jumpy because the mouse bounces around the text.
 */

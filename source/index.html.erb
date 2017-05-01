@@ -7,65 +7,69 @@ title: browserstats.love
     <h2 class="site-updated">Last Updated <%= browser_data["last_update"] %></h2>
 </section>
 
-<section class="card-section">
+<div class="parallax">
 
-  <div class="card browser-stats">
-      <table>
-          <th class="card-header" colspan="3">BROWSER</th>
+  <section class="card-section">
 
-          <!--start running the ruby  -->
-          <% browser_data["Web Browser"].each do |browser, pct| %>
-              <tr>
-                  <td class="percent-column"><%= pct %>%</td>
-                  <td class="icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
-                  <td class="browser-column"><%= browser.upcase %></td>
-              </tr>
-          <% end %>
-          <!--end running the ruby  -->
+    <div class="card browser-stats">
+        <table>
+            <th class="card-header" colspan="3">BROWSER</th>
 
-      </table>
-  </div>
+            <!--start running the ruby  -->
+            <% browser_data["Web Browser"].each do |browser, pct| %>
+                <tr>
+                    <td class="percent-column"><%= pct %>%</td>
+                    <td class="icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                    <td class="browser-column"><%= browser.upcase %></td>
+                </tr>
+            <% end %>
+            <!--end running the ruby  -->
 
-
-  <div class="card resolution-card">
-      <table>
-          <th class="card-header" colspan="3">RESOLUTION</th>
-
-          <!--running the ruby  -->
-          <% browser_data["Screen Resolution"].each do |resolution, pct| %>
-              <tr>
-                  <td class="percent-column"><%= pct %>%</td>
-                  <td class="browser-column">
-                      <%= resolution.upcase %>
-                  </td>
-              </tr>
-          <% end %>
-          <!--end running the ruby  -->
-
-      </table>
-  </div>
-
-</section>
+        </table>
+    </div>
 
 
-<section class="credits">
+    <div class="card resolution-card">
+        <table>
+            <th class="card-header" colspan="3">RESOLUTION</th>
 
-  <div id="heart-circle">
-    <div id="heart">❤️</div>
-  </div>
+            <!--running the ruby  -->
+            <% browser_data["Screen Resolution"].each do |resolution, pct| %>
+                <tr>
+                    <td class="percent-column"><%= pct %>%</td>
+                    <td class="browser-column">
+                        <%= resolution.upcase %>
+                    </td>
+                </tr>
+            <% end %>
+            <!--end running the ruby  -->
 
-  <p>
-    Made with love by
-    <span class="link-container"><a href="http://design.tobysilverman.com" target="_blank">Toby</a></span>,
+        </table>
+    </div>
 
-    <span class="link-container"><a href="http://benpepin.com" target="_blank">Ben</a></span>,
+  </section>
 
-    and
 
-    <span class="link-container"><a href="http://aaronstrick.com" target="_blank">Aaron</a></span>
+  <section class="credits">
 
-    with stats from
+    <div id="heart-circle">
+      <div id="heart">❤️</div>
+    </div>
 
-    <span class="link-container"><a href="https://www.w3schools.com/Browsers/default.asp" target="_blank">W3</a></span>
-  </p>
-</section>
+    <p>
+      Made with love by
+      <span class="link-container"><a href="http://design.tobysilverman.com" target="_blank">Toby</a></span>,
+
+      <span class="link-container"><a href="http://benpepin.com" target="_blank">Ben</a></span>,
+
+      and
+
+      <span class="link-container"><a href="http://aaronstrick.com" target="_blank">Aaron</a></span>
+
+      with stats from
+
+      <span class="link-container"><a href="https://www.w3schools.com/Browsers/default.asp" target="_blank">W3</a></span>
+    </p>
+  </section>
+
+</div>
