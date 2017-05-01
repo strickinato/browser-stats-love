@@ -10,8 +10,8 @@ class GetBrowserData < Middleman::Extension
           "Chrome" => "90",
           "Firefox" => "14",
           "Safari" => "5",
-          "Other" => "2",
-          "IE/Edge" => "4"
+          "IE/Edge" => "4",
+          "Other" => "2"
         },
         "Screen Resolution" => {
           "1366x768" => "35",
