@@ -17,7 +17,7 @@ title: browserstats.love
           <% browser_data["Web Browser"].each do |browser, pct| %>
               <tr>
                   <td class="percent-column"><%= pct %>%</td>
-                  <td class="icon-column"><img src="assets/chrome.svg" alt="Chrome"></td>
+                  <td class="icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
                   <td class="browser-column"><%= browser.upcase %></td>
               </tr>
           <% end %>

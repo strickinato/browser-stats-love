@@ -27,5 +27,23 @@ class GetBrowserData < Middleman::Extension
         }
       }
     end
+
+    def get_asset(browser)
+      case browser
+      when "Chrome"
+        "chrome.svg"
+      when "Firefox"
+        "firefox.svg"
+      when "Safari"
+        "safari.svg"
+      when "IE/Edge"
+        "ie.svg"
+      when "Other"
+        "chrome.svg"
+      else
+        # Won't happen
+        ""
+      end
+    end
   end
 end
