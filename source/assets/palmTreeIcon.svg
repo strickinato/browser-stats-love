@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>palmTreeIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SurfstatsV2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="palmTreeIcon">
+            <g id="palmTree">
+                <rect id="background" x="0" y="0" width="32" height="32"></rect>
+                <text id="🌴" font-family="AppleColorEmoji, Apple Color Emoji" font-size="24" font-weight="normal" fill="#7B7B85">
+                    <tspan x="3.5" y="26">🌴</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
