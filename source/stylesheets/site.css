@@ -136,7 +136,7 @@ td.browser-column {
   the credits
 */
 
-.heart-circle {
+#heart-circle {
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -146,10 +146,12 @@ td.browser-column {
   margin-bottom: 24px;
 }
 
-.heart {
-  line-height: 80px;
+#heart {
+  line-height: 86px;
   margin-left: 3px;
   cursor: pointer;
+  user-select: none;
+  font-size: 28px;
 }
 
 
