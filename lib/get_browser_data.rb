@@ -7,18 +7,18 @@ class GetBrowserData < Middleman::Extension
     def browser_data
       {
         "Web Browser" => {
-          "Chrome" => "90",
+          "Chrome" => "75",
           "Firefox" => "14",
-          "Safari" => "5",
+          "Safari" => "4",
           "IE/Edge" => "4",
-          "Other" => "2"
+          "Other" => "3"
         },
         "Screen Resolution" => {
-          "1366x768" => "35",
-          "1920x1080" => "17",
-          "1280x1024" => "5",
-          "1280x800" => "4",
-          "Other" => "39"
+          "1366 x 768" => "35",
+          "1920 x 1080" => "17",
+          "1280 x 1024" => "5",
+          "1280 x 800" => "4",
+          "Mobile" => "39"
         },
         "last_update" => "May, 2017",
         "data_source" => {
