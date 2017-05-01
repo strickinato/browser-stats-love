@@ -149,6 +149,7 @@ td.browser-column {
 .heart {
   line-height: 80px;
   margin-left: 3px;
+  cursor: pointer;
 }
 
 
