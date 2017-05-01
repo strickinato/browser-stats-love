@@ -98,6 +98,7 @@ td.percent-column {
 
 td.icon-column {
   width: 48px;
+  vertical-align: middle;
 }
 
 .icon {
