@@ -6,18 +6,23 @@
 
 body {
   background-color: #F8F8F8;
-  color: #22222;
-  text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #7B7B85;
+  text-align: center;
 }
 
-.header {
+/*
+  the top bar
+*/
+
+.top-bar {
   background-color: white;
   box-shadow: 0 0px 1px 0px rgba(0, 0, 0, 0.15);
   height: 64px;
   display: flex;
   justify-content: space-between;
-  color: #7b7b85;
   position: sticky;
   top: 0px;
 }
@@ -27,7 +32,15 @@ body {
   padding: 0px 20px;
 }
 
-.data-card {
+/*
+  the cards
+*/
+
+.card-section {
+  padding-top: 96px;
+}
+
+.card {
   background-color: white;
   width: 320px;
   height: 384px;
@@ -36,15 +49,16 @@ body {
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.resolution-stats {
+.resolution-card {
   margin-top: 120px;
 }
 
+/*
+  the tables
+*/
+
 table {
   width: 100%;
-  color: #7B7B85;
-  font-weight: 300;
-  letter-spacing: 2px;
 }
 
 tr:last-child {
@@ -53,42 +67,19 @@ tr:last-child {
 
 tr {
   height: 64px;
-  border-bottom: 1px solid #D2D2D6;
+  border-bottom: 1px solid #ECECEE;
 }
+
+/*
+  table header
+*/
 
 th {
   width: 100%;
   letter-spacing: 8px;
 }
 
-td.pct {
-  width: 160px;
-  font-size: 24px;
-  color: #50505d;
-}
-
-td.icon-column {
-  width: 48px;
-}
-
-td.browser {
-  width: 112px;
-  line-height: 64px;
-  margin-bottom: 32px;
-  text-align: left;
-
-}
-
-.icon {
-  background-color: blue;
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  visibility: hidden;
-}
-
-
-.data-card-header {
+.card-header {
   margin: auto;
   border-bottom: 1px solid #D2D2D6;
   line-height: 64px;
@@ -96,12 +87,38 @@ td.browser {
   font-size: 24px;
 }
 
+/*
+  table columns
+*/
+
+td.percent-column {
+  width: 160px;
+  font-size: 24px;
+}
+
+td.icon-column {
+  width: 48px;
+}
+
+.icon {
+  background-color: #ECECEE;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+td.browser-column {
+  width: 112px;
+  line-height: 64px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+/*
+  the credits
+*/
+
 .credits {
   margin-top: 96px;
   margin-bottom: 48px;
-
-}
-
-.cards {
-  padding-top: 96px;
 }
