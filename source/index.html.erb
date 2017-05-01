@@ -54,15 +54,18 @@ title: browserstats.love
     <div class="heart">❤️</div>
   </div>
 
-  <h2>
-      Info from
-    <%=link_to browser_data["data_source"]["name"], browser_data["data_source"]["url"] %>
-  </h2>
+  <p>
+    Made with love by
+    <span class="link-container"><a href="http://design.tobysilverman.com" target="_blank">Toby</a></span>,
 
-  <h2>
-    Made with ♥ by
-    <%= "#{link_to "Toby", "http://design.tobysilverman.com"}, #{ link_to "Ben", "http://benpepin.com" }," %>
+    <span class="link-container"><a href="http://benpepin.com" target="_blank">Ben</a></span>,
+
     and
-    <%= link_to "Aaron", "http://aaronstrick.com" %>
-  </h2>
+
+    <span class="link-container"><a href="http://aaronstrick.com" target="_blank">Aaron</a></span>
+
+    with stats from
+
+    <span class="link-container"><a href="https://www.w3schools.com/Browsers/default.asp" target="_blank">W3</a></span>
+  </p>
 </section>
