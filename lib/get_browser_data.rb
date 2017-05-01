@@ -20,7 +20,7 @@ class GetBrowserData < Middleman::Extension
           "1280x800" => "4",
           "Other" => "39"
         },
-        "last_update" => "March, 2017",
+        "last_update" => "May, 2017",
         "data_source" => {
           "name" => "W3",
           "url" => "https://www.w3schools.com/Browsers/default.asp"
