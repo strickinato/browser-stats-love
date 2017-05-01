@@ -39,7 +39,7 @@ class GetBrowserData < Middleman::Extension
       when "IE/Edge"
         "ie.svg"
       when "Other"
-        "chrome.svg"
+        "palmTreeIcon.svg"
       else
         # Won't happen
         ""
