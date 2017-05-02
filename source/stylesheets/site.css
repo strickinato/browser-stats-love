@@ -71,6 +71,52 @@ is all jumpy because the mouse bounces around the text.
   the cards
 */
 
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+  margin: auto;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 380px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 1s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
 .card-section {
   padding-top: 96px;
 }
@@ -149,8 +195,15 @@ th {
   border-bottom: 1px solid #D2D2D6;
   letter-spacing: 8px;
   font-size: 24px;
-  padding-left: 10px;
+  padding-left: 8px;
   padding-top: 10px;
+}
+
+.browser-text {
+  padding-top: 100px;
+  padding: 16px;
+
+
 }
 
 /*
@@ -193,6 +246,7 @@ th {
   width: 66%;
   text-align: left;
   padding-left: 40px;
+  line-height: 63px;
 }
 
 /*

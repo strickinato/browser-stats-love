@@ -11,22 +11,46 @@ title: browserstats.love
 
   <section class="card-section">
 
-    <div class="card browser-stats">
-        <table>
-            <th class="card-header" colspan="3">BROWSER</th>
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
 
-            <!--start running the ruby  -->
-            <% browser_data["Web Browser"].each do |browser, pct| %>
-                <tr>
-                    <td class="browser-card-percent-column"><%= pct %>%</td>
-                    <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
-                    <td class="browser-card-browser-column"><%= browser.upcase %></td>
-                </tr>
-            <% end %>
-            <!--end running the ruby  -->
+          <!-- front content -->
 
-        </table>
+          <div class="card browser-stats">
+
+              <table>
+                  <th class="card-header" colspan="3">BROWSER</th>
+
+                  <!--start running the ruby  -->
+                  <% browser_data["Web Browser"].each do |browser, pct| %>
+                      <tr>
+                          <td class="browser-card-percent-column"><%= pct %>%</td>
+                          <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                          <td class="browser-card-browser-column"><%= browser.upcase %></td>
+                      </tr>
+                  <% end %>
+                  <!--end running the ruby  -->
+              </table>
+
+          </div>
+        </div>
+
+        <div class="back">
+          <!-- back content -->
+          <div class="card browser-stats">
+              <table>
+                  <th class="card-header">BROWSER</th>
+                    <tr>
+                      <td class="browser-text">Browserstats are compiled from the best and brightest sources around.</td>
+                    </tr>
+              </table>
+          </div>
+        </div>
+
     </div>
+  </div>
+
 
 
     <div class="card resolution-card">
