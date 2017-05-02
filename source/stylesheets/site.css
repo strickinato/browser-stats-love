@@ -81,6 +81,36 @@ is all jumpy because the mouse bounces around the text.
   margin: auto;
   border-radius: 4px;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
+
+  animation-name: fade-in, scale-up;
+  animation-duration: .5s, .5s;
+  animation-delay: .5s, .5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+  25% {
+    transform: scale(1.05);
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
 }
 
 .resolution-card {
@@ -100,7 +130,7 @@ tr:last-child {
 }
 
 tr {
-  height: 64px;
+  height: 63px;
   border-bottom: 1px solid #ECECEE;
 }
 
@@ -116,7 +146,7 @@ th {
 .card-header {
   margin: auto;
   border-bottom: 1px solid #D2D2D6;
-  line-height: 64px;
+  line-height: 63px;
   letter-spacing: 8px;
   font-size: 24px;
 }
@@ -125,13 +155,14 @@ th {
   table columns
 */
 
-td.percent-column {
-  width: 160px;
+.browser-card-percent-column {
+  width: 33%;
   font-size: 24px;
+  border-right: 1px solid #ECECEE;
 }
 
-td.icon-column {
-  width: 48px;
+.browser-card-icon-column {
+  width: 30%  ;
   vertical-align: middle;
 }
 
@@ -142,11 +173,22 @@ td.icon-column {
   border-radius: 50%;
 }
 
-td.browser-column {
-  width: 112px;
-  line-height: 64px;
+.browser-card-browser-column {
+  width: 36%;
+  line-height: 63px;
   margin-bottom: 32px;
   text-align: left;
+}
+
+.resolution-card-percent-column {
+  width: 33%;
+  font-size: 24px;
+  border-right: 1px solid #ECECEE;
+  line-height: 63px;
+}
+
+.resolution-card-browser-column {
+  width: 66%;
 }
 
 /*

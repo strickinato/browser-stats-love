@@ -18,9 +18,9 @@ title: browserstats.love
             <!--start running the ruby  -->
             <% browser_data["Web Browser"].each do |browser, pct| %>
                 <tr>
-                    <td class="percent-column"><%= pct %>%</td>
-                    <td class="icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
-                    <td class="browser-column"><%= browser.upcase %></td>
+                    <td class="browser-card-percent-column"><%= pct %>%</td>
+                    <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                    <td class="browser-card-browser-column"><%= browser.upcase %></td>
                 </tr>
             <% end %>
             <!--end running the ruby  -->
@@ -36,8 +36,8 @@ title: browserstats.love
             <!--running the ruby  -->
             <% browser_data["Screen Resolution"].each do |resolution, pct| %>
                 <tr>
-                    <td class="percent-column"><%= pct %>%</td>
-                    <td class="browser-column">
+                    <td class="percent-column resolution-card-percent-column"><%= pct %>%</td>
+                    <td class="browser-column resolution-card-browser-column">
                         <%= resolution.upcase %>
                     </td>
                 </tr>
