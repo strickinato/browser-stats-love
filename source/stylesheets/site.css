@@ -59,6 +59,7 @@ is all jumpy because the mouse bounces around the text.
   justify-content: space-between;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
 .site-title, .site-updated {
