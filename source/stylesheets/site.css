@@ -68,11 +68,39 @@ is all jumpy because the mouse bounces around the text.
 }
 
 /*
+  the toggle
+*/
+
+.toggle {
+  display: inline-flex;
+  background-color: white;
+  font-size: 28px;
+  margin: auto;
+  margin-top: 56px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
+  padding: 12px 24px;
+  justify-content: space-around;
+
+  animation-name: fade-in, scale-up;
+  animation-duration: .5s, .5s;
+  animation-delay: .5s, .5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.globe, .america {
+  vertical-align: middle;
+}
+
+
+
+/*
   the cards
 */
 
 .card-section {
-  padding-top: 96px;
+  padding-top: 56px;
 }
 
 .card {
