@@ -147,9 +147,10 @@ th {
 .card-header {
   margin: auto;
   border-bottom: 1px solid #D2D2D6;
-  line-height: 63px;
   letter-spacing: 8px;
   font-size: 24px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 /*
@@ -190,6 +191,8 @@ th {
 
 .resolution-card-browser-column {
   width: 66%;
+  text-align: left;
+  padding-left: 40px;
 }
 
 /*
