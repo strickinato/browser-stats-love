@@ -3,8 +3,8 @@ title: browserstats.love
 ---
 
 <section class="top-bar">
-    <h2 class="site-title"><span id="title-emoji">❤️</span>    browserstats.love</h2>
-    <h2 class="site-updated">Last Updated <%= browser_data["last_update"] %></h2>
+  <h2 class="site-title"><span id="title-emoji">❤️</span>    browserstats.love</h2>
+  <h2 class="site-updated">Last Updated <%= browser_data["last_update"] %></h2>
 </section>
 
 <div class="parallax">
@@ -16,22 +16,22 @@ title: browserstats.love
         <div class="front">
 
           <!-- front content -->
-
+          
           <div class="card browser-stats">
 
-              <table>
-                  <th class="card-header" colspan="3">BROWSER</th>
+            <table>
+              <th class="card-header" colspan="3">BROWSER</th>
 
-                  <!--start running the ruby  -->
-                  <% browser_data["Web Browser"].each do |browser, pct| %>
-                      <tr>
-                          <td class="browser-card-percent-column"><%= pct %>%</td>
-                          <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
-                          <td class="browser-card-browser-column"><%= browser.upcase %></td>
-                      </tr>
-                  <% end %>
-                  <!--end running the ruby  -->
-              </table>
+              <!--start running the ruby  -->
+              <% browser_data["Web Browser"].each do |browser, pct| %>
+              <tr>
+                <td class="browser-card-percent-column"><%= pct %>%</td>
+                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                <td class="browser-card-browser-column"><%= browser.upcase %></td>
+              </tr>
+              <% end %>
+              <!--end running the ruby  -->
+            </table>
 
           </div>
         </div>
@@ -39,15 +39,15 @@ title: browserstats.love
         <div class="back">
           <!-- back content -->
           <div class="card browser-stats">
-              <table>
-                  <th class="card-header">BROWSER</th>
-                    <tr>
-                      <td class="browser-text">
-                          <p>Browserstats are compiled from W3Schools who gather their data from their 45 million monthly visits.</p>
-                          <br>These statistics may not be relevant to your web site as different sites attract different audiences. Some web sites attract developers using professional hardware, while other sites attract hobbyists using older computers.</br>
-                      </td>
-                    </tr>
-              </table>
+            <table>
+              <th class="card-header">BROWSER</th>
+              <tr>
+                <td class="browser-text">
+                  <p>Browserstats are compiled from W3Schools who gather their data from their 45 million monthly visits.</p>
+                  <br>These statistics may not be relevant to your web site as different sites attract different audiences. Some web sites attract developers using professional hardware, while other sites attract hobbyists using older computers.</br>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
 
@@ -55,23 +55,46 @@ title: browserstats.love
     </div>
 
 
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
 
-    <div class="card resolution-card">
-        <table>
-            <th class="card-header" colspan="3">RESOLUTION</th>
+          <!-- front content -->
 
-            <!--running the ruby  -->
-            <% browser_data["Screen Resolution"].each do |resolution, pct| %>
-                <tr>
-                    <td class="percent-column resolution-card-percent-column"><%= pct %>%</td>
-                    <td class="browser-column resolution-card-browser-column">
-                        <%= resolution.upcase %>
-                    </td>
-                </tr>
-            <% end %>
-            <!--end running the ruby  -->
+          <div class="card resolution-card">
+            <table>
+              <th class="card-header" colspan="3">RESOLUTION</th>
 
-        </table>
+              <!--running the ruby  -->
+              <% browser_data["Screen Resolution"].each do |resolution, pct| %>
+              <tr>
+                <td class="percent-column resolution-card-percent-column"><%= pct %>%</td>
+                <td class="browser-column resolution-card-browser-column">
+                  <%= resolution.upcase %>
+                </td>
+              </tr>
+              <% end %>
+              <!--end running the ruby  -->
+
+            </table>
+          </div>
+        </div>
+        <div class="back">
+          <!-- back content -->
+          <div class="card resolution-card">
+            <table>
+              <th class="card-header">RESOLUTION</th>
+              <tr>
+                <td class="browser-text">
+                  <p>Browserstats are compiled from W3Schools who gather their data from their 45 million monthly visits.</p>
+                  <br>These statistics may not be relevant to your web site as different sites attract different audiences. Some web sites attract developers using professional hardware, while other sites attract hobbyists using older computers.</br>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </section>
