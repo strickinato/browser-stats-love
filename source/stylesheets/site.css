@@ -201,7 +201,9 @@ th {
 
 .browser-text {
   padding-top: 100px;
-  padding: 16px;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
 
 
 }
