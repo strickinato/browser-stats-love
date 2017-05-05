@@ -2,6 +2,22 @@ var allEmojis;
 
 $(function(){
 
+
+
+
+  $("#flip-button").click( function() {
+
+
+    $("#browser-card").toggleClass("flipped")
+  });
+
+
+
+
+
+
+
+
   var lastEmoji = 0;
   $('#heart-circle').click( function() {
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
