@@ -83,6 +83,10 @@ is all jumpy because the mouse bounces around the text.
 	transform: rotateY(180deg);
 }
 
+.flip-container.flippedplus .flipperplus {
+	transform: rotateY(180deg);
+}
+
 .flip-container, .front, .back {
 	width: 320px;
 	height: 380px;
@@ -92,14 +96,19 @@ is all jumpy because the mouse bounces around the text.
 .flipper {
 	transition: 1s;
 	transform-style: preserve-3d;
-
 	position: relative;
+}
+
+.flipperplus {
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+  transition-delay: .25s;
 }
 
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;

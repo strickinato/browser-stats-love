@@ -9,6 +9,7 @@ $(function(){
 
 
     $("#browser-card").toggleClass("flipped")
+    $("#resolution-card").toggleClass("flippedplus")
   });
 
 
