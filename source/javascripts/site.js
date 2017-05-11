@@ -2,16 +2,12 @@ var allEmojis;
 
 $(function(){
 
-
-
-
   $("#flip-button").click( function() {
 
 
     $("#browser-card").toggleClass("flipped")
     $("#resolution-card").toggleClass("flippedplus")
   });
-
 
 
 

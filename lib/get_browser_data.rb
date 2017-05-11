@@ -7,10 +7,10 @@ class GetBrowserData < Middleman::Extension
     def browser_data
       {
         "Web Browser" => {
-          "Chrome" => "75",
-          "Firefox" => "14",
-          "Safari" => "4",
-          "IE/Edge" => "4",
+          "Chrome" => "45",
+          "Firefox" => "6",
+          "Safari" => "31",
+          "IE/Edge" => "7",
           "Other" => "3"
         },
         "Screen Resolution" => {
