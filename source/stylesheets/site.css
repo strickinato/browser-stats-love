@@ -28,7 +28,8 @@ toggle
   text-align: center;
   width: 112px;
   margin: auto auto 75px;
-  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 
 }
 
@@ -43,12 +44,13 @@ toggle
     width: 1px;
     border: 0;
     overflow: hidden;
-    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
 
 }
 
 .switch-field label {
   float: left;
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .switch-field label {
@@ -62,23 +64,25 @@ toggle
   text-align: center;
   align-content: center;
   text-shadow: none;
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition:    all 0.1s ease-in-out;
-  -ms-transition:     all 0.1s ease-in-out;
-  -o-transition:      all 0.1s ease-in-out;
-  transition:         all 0.1s ease-in-out;
+  -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition:    all 0.2s ease-in-out;
+  -ms-transition:     all 0.2s ease-in-out;
+  -o-transition:      all 0.2s ease-in-out;
+  transition:         all 0.2s ease-in-out;
 }
 
 .switch-field label:hover {
     cursor: pointer;
+    font-size: 28px;
+
 }
 
 .switch-field input:checked + label {
   background-color: #ffffff;
   -webkit-box-shadow: none;
-  box-shadow: none;
+  font-size: 28px;
 }
 
 .switch-field label:first-of-type {
