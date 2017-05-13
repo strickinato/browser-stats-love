@@ -54,7 +54,7 @@ title: browserstats.love
               <th class="card-header" colspan="3">BROWSER</th>
 
               <!--start running the ruby  -->
-              <% browser_data["Web Browser"].each do |browser, pct| %>
+              <% browser_data["World"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
                 <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
@@ -99,13 +99,21 @@ title: browserstats.love
           <!-- back content -->
           <div class="card resolution-card">
             <table>
-              <th class="card-header">RESOLUTION</th>
+               <th class="card-header" colspan="3">RESOLUTION</th>
+
+              <!--running the ruby  -->
+              <% browser_data["World Resolution"].each do |resolution, pct| %>
               <tr>
-                <td class="browser-text">
-                  <p>The trends show that screens are getting bigger for people that browse on desktops.</p>
-                  <br>These statistics may not be relevant to your web site as different sites attract different audiences. Some web sites attract developers using professional hardware, while other sites attract hobbyists using older computers.</br>
+                <td class="percent-column resolution-card-percent-column"><%= pct %>%</td>
+                <td class="browser-column resolution-card-browser-column">
+                  <%= resolution.upcase %>
                 </td>
               </tr>
+              <% end %>
+              <!--end running the ruby  -->
+
+
+
             </table>
           </div>
         </div>
@@ -134,7 +142,7 @@ title: browserstats.love
 
       with stats from
 
-      <span class="link-container"><a href="https://www.w3schools.com/Browsers/default.asp" target="_blank">W3</a></span>
+      <span class="link-container"><a href="http://gs.statcounter.com/" target="_blank">Stat Counter</a></span>
     </p>
   </section>
 
