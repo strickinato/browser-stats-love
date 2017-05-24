@@ -1,6 +1,19 @@
 var allEmojis;
 
+
 $(function(){
+
+
+  $("#select-usa").click( function(event){
+    $("#browser-card").removeClass("flipped");
+    $("#resolution-card").removeClass("flippedplus");
+  });
+
+  $("#select-world").click( function(event){
+    $("#browser-card").addClass("flipped")
+    $("#resolution-card").addClass("flippedplus")
+  });
+
 
   var lastEmoji = 0;
   $('#heart-circle').click( function() {

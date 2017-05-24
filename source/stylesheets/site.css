@@ -17,6 +17,79 @@ a {
   color: #FB433C;
 }
 
+
+/** {
+toggle
+}*/
+
+.switch-field {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  overflow: hidden;
+  text-align: center;
+  width: 112px;
+  margin: auto auto 75px;
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.switch-field label {
+    float: left;
+    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.switch-field label {
+  display: inline-block;
+  width: 56px;
+  height: 32px;
+  padding-top: 12px;
+  background-color: #F8F8F8;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  align-content: center;
+  text-shadow: none;
+  -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition:    all 0.2s ease-in-out;
+  -ms-transition:     all 0.2s ease-in-out;
+  -o-transition:      all 0.2s ease-in-out;
+  transition:         all 0.2s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.switch-field input:checked + label {
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  font-size: 28px;
+
+}
+
+.switch-field label:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+
 /** {
   background parralax
 }*/
@@ -71,8 +144,66 @@ is all jumpy because the mouse bounces around the text.
   the cards
 */
 
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+  margin: auto;
+}
+
+/* flip the pane when hovered */
+.flip-container.flipped .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container.flippedplus .flipperplus {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 380px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.flipperplus {
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+  transition-delay: .25s;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
 .card-section {
   padding-top: 96px;
+  display: inherit;
+
 }
 
 .card {
@@ -149,8 +280,17 @@ th {
   border-bottom: 1px solid #D2D2D6;
   letter-spacing: 8px;
   font-size: 24px;
-  padding-left: 10px;
+  padding-left: 8px;
   padding-top: 10px;
+}
+
+.browser-text {
+  padding-top: 100px;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+
+
 }
 
 /*
@@ -193,6 +333,7 @@ th {
   width: 66%;
   text-align: left;
   padding-left: 40px;
+  line-height: 63px;
 }
 
 /*
@@ -219,6 +360,6 @@ th {
 
 
 .credits {
-  margin-top: 96px;
+  margin-top: 206px;
   margin-bottom: 48px;
 }
