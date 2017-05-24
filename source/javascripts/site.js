@@ -4,16 +4,15 @@ var allEmojis;
 $(function(){
 
 
-    $("#select-usa").click( function(){
-        var usaSelected = $("#select-usa").is(':checked')
-        if(!usaSelected) {
-            $("#browser-card").toggleClass("flipped")
-            $("#resolution-card").toggleClass("flipped")
-        }
-    });
+  $("#select-usa").click( function(event){
+    $("#browser-card").removeClass("flipped");
+    $("#resolution-card").removeClass("flippedplus");
+  });
 
-
-
+  $("#select-world").click( function(event){
+    $("#browser-card").addClass("flipped")
+    $("#resolution-card").addClass("flippedplus")
+  });
 
 
   var lastEmoji = 0;
