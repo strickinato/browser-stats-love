@@ -22,6 +22,86 @@ a {
 toggle
 }*/
 
+#abutton {
+
+  width: 112px;
+  height: 40px;
+  background-color: #F8F8F8;
+  border: 1px solid green;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: center;
+}
+
+
+#flip-tab {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  overflow: hidden;
+  text-align: center;
+  width: 112px;
+  height: 40px;
+  background-color: #F8F8F8;
+  margin: auto auto 75px;
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#flip-tab-left {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  overflow: hidden;
+  text-align: center;
+  width: 56px;
+  height: 40px;
+  background-color: #FFFFFF;
+  margin: auto auto 75px;
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  float: left;
+  content: center;
+  padding-top: 12px;
+}
+
+#flip-tab-right {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  overflow: hidden;
+  text-align: center;
+  width: 56px;
+  height: 40px;
+  background-color: #f8f8f8;
+  margin: auto auto 75px;
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  float: right;
+  padding-top: 12px;
+  opacity: 1;
+}
+
+#flip-tab-right:hover {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.01), 10px 10px 5px 1px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+    transform: translate(-2px, -2px);
+    opacity: 1;
+
+}
+
+#flip-tab-right:active {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.01), 10px 10px 5px 1px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+    transform: translate(-2px, -2px);
+    opacity: 1;
+}
+
+
+
+
+
+
+
 .switch-field {
   font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
   overflow: hidden;
@@ -83,6 +163,7 @@ toggle
   background-color: #ffffff;
   -webkit-box-shadow: none;
   font-size: 28px;
+
 }
 
 .switch-field label:first-of-type {
@@ -207,6 +288,8 @@ is all jumpy because the mouse bounces around the text.
 
 .card-section {
   padding-top: 96px;
+  display: inherit;
+
 }
 
 .card {

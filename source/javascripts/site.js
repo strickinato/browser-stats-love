@@ -1,10 +1,21 @@
 var allEmojis;
 
 
+// Select toggler and put click handler
+$("#abutton").click(function() {
+
+  // In the handler, select the stuff you wanna flip
+  // And flip it
+  $("#browser-card").toggleClass("flipped")
+  $("#resolution-card").toggleClass("flippedplus")
+
+});
+
 
 
 $(function(){
-    $("#flip-button").click( function() {
+    $("#flip-tab-right").click( function() {
+     $("flip-tab").transition({ x: 200 })
     $("#browser-card").toggleClass("flipped")
     $("#resolution-card").toggleClass("flippedplus")
   });
