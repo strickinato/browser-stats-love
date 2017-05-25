@@ -9,6 +9,12 @@ body {
   letter-spacing: 2px;
   color: #7B7B85;
   text-align: center;
+  /** {
+  background-image: linear-gradient(#F4887B, #FFF9BA);
+}*/
+  height: 100%;
+
+  background-attachment: fixed;
 }
 
 a {
@@ -26,9 +32,9 @@ toggle
   font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
   overflow: hidden;
   text-align: center;
-  width: 112px;
+  width: 168px;
   margin: auto auto 50px;
-  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
 }
@@ -40,27 +46,27 @@ toggle
     width: 1px;
     border: 0;
     overflow: hidden;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
 .switch-field label {
     float: left;
-    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.15), 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .switch-field label {
   display: inline-block;
   width: 56px;
   height: 32px;
-  padding-top: 12px;
-  background-color: #F8F8F8;
-  font-size: 24px;
+  padding-top: 10px;
+  background-color: #F4F4F4;
+  font-size: 22px;
   font-weight: normal;
   text-align: center;
   align-content: center;
   text-shadow: none;
-  -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0 0px rgba(171, 171, 171, 0.1);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition:    all 0.2s ease-in-out;
   -ms-transition:     all 0.2s ease-in-out;
@@ -78,6 +84,8 @@ toggle
   background-color: #ffffff;
   -webkit-box-shadow: none;
   font-size: 28px;
+  text-align: center;
+
 
 }
 
@@ -90,22 +98,7 @@ toggle
 }
 
 
-/** {
-  background parralax
-}*/
-.parallax {
-    /* The image used */
-    background-image: linear-gradient(#F4887B, #FFF9BA);
 
-    /* Full height */
-    height: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* when we don't wrap the link in a little container, then it
 is all jumpy because the mouse bounces around the text.
@@ -154,6 +147,8 @@ is all jumpy because the mouse bounces around the text.
 .flip-container {
 	perspective: 1000px;
   margin: auto;
+  display: block;
+
 }
 
 /* flip the pane when hovered */
@@ -165,7 +160,7 @@ is all jumpy because the mouse bounces around the text.
 	transform: rotateY(180deg);
 }
 
-.flip-container, .front, .back {
+.flip-container, .front, .back, .side {
 	width: 320px;
 	height: 380px;
 }
@@ -185,7 +180,7 @@ is all jumpy because the mouse bounces around the text.
 }
 
 /* hide back of pane during swap */
-.front, .back {
+.front, .back, .side {
 	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
@@ -206,8 +201,10 @@ is all jumpy because the mouse bounces around the text.
 
 
 .card-section {
-  padding-top: 66px;
+  padding-top: 50px;
   display: inherit;
+  width: 1000px;
+  margin: auto;
 
 }
 
@@ -218,13 +215,42 @@ is all jumpy because the mouse bounces around the text.
   margin: auto;
   border-radius: 4px;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
-
   animation-name: fade-in, scale-up;
   animation-duration: .5s, .5s;
   animation-delay: .5s, .5s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
+
+#browser-card {
+  margin-top: 10px;
+  display: inline-block;
+ margin-left: auto;
+ margin-right: auto;
+ float: left;
+ padding-left: 160px
+}
+
+#resolution-card {
+  margin-top: 10px;
+  display: inline-block;
+ margin-left: auto;
+ margin-right: auto;
+ float: right;
+ padding-right: 160px
+}
+
+#phone-card {
+  margin-top: 10px;
+  display: inline-block;
+ margin-left: auto;
+ margin-right: auto;
+ float: right;
+ padding-right: 160px
+}
+
+
+
 
 @keyframes fade-in {
 0% { opacity: 0; }
@@ -250,9 +276,6 @@ is all jumpy because the mouse bounces around the text.
   }
 }
 
-.resolution-card {
-  margin-top: 120px;
-}
 
 /*
   the tables
@@ -365,6 +388,11 @@ th {
 
 
 .credits {
-  margin-top: 206px;
-  margin-bottom: 48px;
+  position: fixed;
+  bottom: 0;
+
+  /* And if you want the div to be full-width: */
+  left: 0;
+  right: 0;
+  padding-bottom: 20px;
 }
