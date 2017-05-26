@@ -1,7 +1,6 @@
 var allEmojis;
 
 
-
 $(function(){
 
 

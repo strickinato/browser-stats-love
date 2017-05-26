@@ -17,9 +17,7 @@ a {
   color: #FB433C;
 }
 
-
 .top-bar {
-
   transition: 0.5s;
   -webkit-transition: 0.5s; /*Safari*/
   width:100%;
@@ -44,7 +42,6 @@ a {
   .site-description {
     display:none;
   }
-
 }
 
 @media all and (max-width: 460px) {
@@ -65,7 +62,6 @@ a {
 
 }
 
-
 /** {
 toggle
 }*/
@@ -78,7 +74,6 @@ toggle
   margin: auto auto 50px;
   box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-
 }
 
 .switch-field input {
@@ -119,14 +114,12 @@ toggle
 .switch-field label:hover {
     cursor: pointer;
     font-size: 24px;
-
 }
 
 .switch-field input:checked + label {
   background-color: #ffffff;
   -webkit-box-shadow: none;
   font-size: 28px;
-
 }
 
 .switch-field label:first-of-type {
