@@ -17,7 +17,6 @@ a {
   color: #FB433C;
 }
 
-
 /** {
 toggle
 }*/
@@ -27,10 +26,9 @@ toggle
   overflow: hidden;
   text-align: center;
   width: 112px;
-  margin: auto auto 75px;
+  margin: auto auto 50px;
   box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-
 }
 
 .switch-field input {
@@ -71,14 +69,12 @@ toggle
 .switch-field label:hover {
     cursor: pointer;
     font-size: 24px;
-
 }
 
 .switch-field input:checked + label {
   background-color: #ffffff;
   -webkit-box-shadow: none;
   font-size: 28px;
-
 }
 
 .switch-field label:first-of-type {
@@ -133,6 +129,9 @@ is all jumpy because the mouse bounces around the text.
   position: sticky;
   top: 0px;
   z-index: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s; /*Safari*/
+  width:100%;
 }
 
 .site-title, .site-updated {
@@ -140,6 +139,26 @@ is all jumpy because the mouse bounces around the text.
   padding: 0px 20px;
 }
 
+.site-description {
+  line-height: 64px;
+  margin-left: 44px;
+}
+
+@media all and (max-width: 880px) {
+  .top-bar {
+    font-size:16px;
+  }
+
+  .site-description {
+    display:none;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .top-bar {
+    font-size:12px;
+  }
+}
 /*
   the cards
 */
@@ -201,7 +220,7 @@ is all jumpy because the mouse bounces around the text.
 
 
 .card-section {
-  padding-top: 96px;
+  padding-top: 66px;
   display: inherit;
 
 }
