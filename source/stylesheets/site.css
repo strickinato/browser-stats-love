@@ -23,20 +23,9 @@ a {
   width:100%;
 }
 
-.mobile {
-  display:none;
-}
-
 @media all and (max-width: 880px) {
   .top-bar {
-    background-color:rgba(0,150,0,0.60);
     font-size:16px;
-  }
-  .mobile {
-    display:block;
-  }
-  .desktop {
-    display:none;
   }
 
   .site-description {
@@ -46,20 +35,8 @@ a {
 
 @media all and (max-width: 460px) {
   .top-bar {
-    background-color:rgba(0,150,0,0.60);
     font-size:12px;
   }
-  .mobile {
-    display:block;
-  }
-  .desktop {
-    display:none;
-  }
-
-  .site-description {
-    display:none;
-  }
-
 }
 
 /** {
