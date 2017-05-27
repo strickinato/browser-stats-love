@@ -27,7 +27,7 @@ toggle
   text-align: center;
   width: 112px;
   margin: auto auto 32px;
-  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 10px .2px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
@@ -38,12 +38,11 @@ toggle
     width: 1px;
     border: 0;
     overflow: hidden;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .switch-field label {
     float: left;
-    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .switch-field label {
@@ -51,14 +50,13 @@ toggle
   width: 56px;
   height: 32px;
   padding-top: 12px;
-  background-color: #F8F8F8;
+  background-color: #F9f9f9;
   font-size: 24px;
+  line-height: 23px;
   font-weight: normal;
   text-align: center;
   align-content: center;
   text-shadow: none;
-  -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition:    all 0.2s ease-in-out;
   -ms-transition:     all 0.2s ease-in-out;
@@ -73,16 +71,19 @@ toggle
 
 .switch-field input:checked + label {
   background-color: #ffffff;
-  -webkit-box-shadow: none;
   font-size: 28px;
+  line-height: 23px;
+  opacity: 1;
 }
 
 .switch-field label:first-of-type {
   border-radius: 4px 0 0 4px;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
 .switch-field label:last-of-type {
   border-radius: 0 4px 4px 0;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -207,7 +208,6 @@ is all jumpy because the mouse bounces around the text.
 .card-section {
   padding-top: 44px;
   margin: auto auto 50px;
-
 }
 
 .card {
@@ -217,7 +217,6 @@ is all jumpy because the mouse bounces around the text.
   margin: auto;
   border-radius: 4px;
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
-
   animation-name: fade-in, scale-up;
   animation-duration: .5s, .5s;
   animation-delay: .5s, .5s;
@@ -251,9 +250,8 @@ is all jumpy because the mouse bounces around the text.
 
 #resolution-card {
   position: relative;
-   padding: 20px;
-   display: inline-block;
-
+  padding: 20px;
+  display: inline-block;
 }
 
 
@@ -304,8 +302,6 @@ th {
   padding: 20px;
   text-align: left;
   font-size: 18px;
-
-
 }
 
 /*
@@ -380,6 +376,4 @@ th {
   bottom: 25px;
   left: 0;
   right: 0;
-
-
 }
