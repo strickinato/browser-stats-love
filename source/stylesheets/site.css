@@ -4,8 +4,9 @@
 
 body {
   background-color: #F8F8F8;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   letter-spacing: 2px;
   color: #7B7B85;
   text-align: center;
@@ -27,7 +28,7 @@ toggle
   text-align: center;
   width: 112px;
   margin: auto auto 32px;
-  box-shadow: 1px 1px 10px .2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
 
@@ -43,12 +44,14 @@ toggle
 .switch-field label {
     float: left;
     box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.1);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .switch-field label {
   display: inline-block;
   width: 56px;
   height: 32px;
+  opacity: .5;
   padding-top: 12px;
   background-color: #F9f9f9;
   font-size: 24px;
@@ -67,23 +70,29 @@ toggle
 .switch-field label:hover {
     cursor: pointer;
     font-size: 24px;
+    transition:         all .2s ease-in-out;
+    opacity: 1;
+    color: rgba(0, 0, 0, 1);
 }
 
 .switch-field input:checked + label {
   background-color: #ffffff;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 23px;
   opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
 .switch-field label:first-of-type {
   border-radius: 4px 0 0 4px;
   -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  opacity: 1;
 }
 
 .switch-field label:last-of-type {
   border-radius: 0 4px 4px 0;
   -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  opacity: 1;
 }
 
 
@@ -142,7 +151,13 @@ is all jumpy because the mouse bounces around the text.
 
 @media all and (max-width: 460px) {
   .top-bar {
-    font-size:12px;
+    font-size:14px;
+  }
+  .site-title {
+    padding-left: 10px;
+  }
+  .site-updated {
+    padding-right: 10px;
   }
 }
 /*
@@ -286,9 +301,9 @@ th {
 
 .card-header {
   margin: auto;
-  border-bottom: 1px solid #D2D2D6;
-  letter-spacing: 8px;
-  font-size: 24px;
+  border-bottom: 1px solid #ECECEE;
+  letter-spacing: 6px;
+  font-size: 20px;
   padding-left: 8px;
   padding-top: 10px;
 }
@@ -306,7 +321,7 @@ th {
 
 .browser-card-percent-column {
   width: 33%;
-  font-size: 24px;
+  font-size: 20px;
   border-right: 1px solid #ECECEE;
 }
 
@@ -331,7 +346,7 @@ th {
 
 .resolution-card-percent-column {
   width: 33%;
-  font-size: 24px;
+  font-size: 20px;
   border-right: 1px solid #ECECEE;
   line-height: 63px;
 }
@@ -339,7 +354,7 @@ th {
 .resolution-card-browser-column {
   width: 66%;
   text-align: left;
-  padding-left: 40px;
+  padding-left: 32px;
   line-height: 63px;
 }
 
@@ -368,8 +383,8 @@ th {
 
 .credits {
   position: relative;
-  padding-top: 16px;
-  bottom: 25px;
-  left: 0;
-  right: 0;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 24px;
+  margin-top: -24px;
 }
