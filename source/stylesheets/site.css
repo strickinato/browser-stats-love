@@ -254,12 +254,10 @@ is all jumpy because the mouse bounces around the text.
   display: inline-block;
 }
 
-
 #browser-card {
   padding: 20px;
   position: relative;
   display: inline-block;
-
 }
 
 /*
