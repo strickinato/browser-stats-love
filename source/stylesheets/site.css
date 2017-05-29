@@ -4,8 +4,9 @@
 
 body {
   background-color: #F8F8F8;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   letter-spacing: 2px;
   color: #7B7B85;
   text-align: center;
@@ -300,9 +301,9 @@ th {
 
 .card-header {
   margin: auto;
-  border-bottom: 1px solid #D2D2D6;
-  letter-spacing: 8px;
-  font-size: 24px;
+  border-bottom: 1px solid #ECECEE;
+  letter-spacing: 6px;
+  font-size: 20px;
   padding-left: 8px;
   padding-top: 10px;
 }
@@ -320,7 +321,7 @@ th {
 
 .browser-card-percent-column {
   width: 33%;
-  font-size: 24px;
+  font-size: 20px;
   border-right: 1px solid #ECECEE;
 }
 
@@ -345,7 +346,7 @@ th {
 
 .resolution-card-percent-column {
   width: 33%;
-  font-size: 24px;
+  font-size: 20px;
   border-right: 1px solid #ECECEE;
   line-height: 63px;
 }
@@ -353,7 +354,7 @@ th {
 .resolution-card-browser-column {
   width: 66%;
   text-align: left;
-  padding-left: 40px;
+  padding-left: 32px;
   line-height: 63px;
 }
 
