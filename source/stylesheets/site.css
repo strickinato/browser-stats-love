@@ -204,10 +204,8 @@ is all jumpy because the mouse bounces around the text.
 	transform: rotateY(180deg);
 }
 
-
 .card-section {
-  padding-top: 44px;
-  margin: auto auto 50px;
+  padding: 48px 0px;
 }
 
 .card {
