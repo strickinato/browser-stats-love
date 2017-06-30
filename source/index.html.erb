@@ -29,7 +29,7 @@ title: browserstats.love
           <div class="card browser-stats" >
 
             <table>
-              <th class="card-header" colspan="3">BROWSER</th>
+              <th class="card-header" colspan="3">DESKTOP</th>
 
               <!--start running the ruby  -->
               <% browser_data["Web Browser"].each do |browser, pct| %>
@@ -49,7 +49,7 @@ title: browserstats.love
           <!-- back content -->
           <div class="card browser-stats">
             <table>
-              <th class="card-header" colspan="3">BROWSER</th>
+              <th class="card-header" colspan="3">DESKTOP</th>
 
               <!--start running the ruby  -->
               <% browser_data["World"].each do |browser, pct| %>
@@ -76,43 +76,41 @@ title: browserstats.love
           <!-- front content -->
 
           <div class="card resolution-card">
-            <table>
-              <th class="card-header" colspan="3">RESOLUTION</th>
 
-              <!--running the ruby  -->
-              <% browser_data["Screen Resolution"].each do |resolution, pct| %>
+            <table>
+              <th class="card-header" colspan="3">MOBILE</th>
+
+              <!--start running the ruby  -->
+              <% browser_data["Screen Resolution"].each do |browser, pct| %>
               <tr>
-                <td class="percent-column resolution-card-percent-column"><%= pct %>%</td>
-                <td class="browser-column resolution-card-browser-column">
-                  <%= resolution.upcase %>
-                </td>
+                <td class="browser-card-percent-column"><%= pct %>%</td>
+                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                <td class="browser-card-browser-column"><%= browser.upcase %></td>
               </tr>
               <% end %>
               <!--end running the ruby  -->
-
             </table>
+
           </div>
         </div>
         <div class="back">
           <!-- back content -->
           <div class="card resolution-card">
-            <table>
-               <th class="card-header" colspan="3">RESOLUTION</th>
 
-              <!--running the ruby  -->
-              <% browser_data["World Resolution"].each do |resolution, pct| %>
+            <table>
+              <th class="card-header" colspan="3">MOBILE</th>
+
+              <!--start running the ruby  -->
+              <% browser_data["World Resolution"].each do |browser, pct| %>
               <tr>
-                <td class="percent-column resolution-card-percent-column"><%= pct %>%</td>
-                <td class="browser-column resolution-card-browser-column">
-                  <%= resolution.upcase %>
-                </td>
+                <td class="browser-card-percent-column"><%= pct %>%</td>
+                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                <td class="browser-card-browser-column"><%= browser.upcase %></td>
               </tr>
               <% end %>
               <!--end running the ruby  -->
-
-
-
             </table>
+
           </div>
         </div>
 
