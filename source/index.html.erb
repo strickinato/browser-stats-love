@@ -32,7 +32,7 @@ title: browserstats.love
               <th class="card-header" colspan="3">DESKTOP</th>
 
               <!--start running the ruby  -->
-              <% browser_data["Web Browser"].each do |browser, pct| %>
+              <% browser_data["desktop-usa"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
                 <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
@@ -52,7 +52,7 @@ title: browserstats.love
               <th class="card-header" colspan="3">DESKTOP</th>
 
               <!--start running the ruby  -->
-              <% browser_data["World"].each do |browser, pct| %>
+              <% browser_data["desktop-world"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
                 <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
@@ -81,7 +81,7 @@ title: browserstats.love
               <th class="card-header" colspan="3">MOBILE</th>
 
               <!--start running the ruby  -->
-              <% browser_data["Screen Resolution"].each do |browser, pct| %>
+              <% browser_data["mobile-usa"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
                 <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
@@ -101,7 +101,7 @@ title: browserstats.love
               <th class="card-header" colspan="3">MOBILE</th>
 
               <!--start running the ruby  -->
-              <% browser_data["World Resolution"].each do |browser, pct| %>
+              <% browser_data["mobile-world"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
                 <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>

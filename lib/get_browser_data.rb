@@ -6,28 +6,28 @@ class GetBrowserData < Middleman::Extension
   helpers do
     def browser_data
       {
-        "Web Browser" => {
+        "desktop-usa" => {
           "Chrome" => "56",
           "IE" => "14",
           "Firefox" => "12",
           "Safari" => "10",
           "Other" => "8"
         },
-        "World" => {
+        "desktop-world" => {
           "Chrome" => "53",
           "Safari" => "15",
           "UC" => "8",
           "Firefox" => "6",
           "Other" => "18"
         },
-        "Screen Resolution" => {
+        "mobile-usa" => {
           "Safari" => "51",
           "Chrome" => "39",
           "Samsung" => "6",
           "Android" => "1",
           "Other" => "3"
         },
-        "World Resolution" => {
+        "mobile-world" => {
           "Chrome" => "50",
           "Safari" => "18",
           "UC" => "16",
