@@ -6,35 +6,35 @@ class GetBrowserData < Middleman::Extension
   helpers do
     def browser_data
       {
-        "Web Browser" => {
-          "Chrome" => "45",
-          "Safari" => "32",
-          "IE" => "7",
-          "Firefox" => "7",
-          "Other" => "9"
+        "desktop-usa" => {
+          "Chrome" => "56",
+          "IE" => "14",
+          "Firefox" => "12",
+          "Safari" => "10",
+          "Other" => "8"
         },
-        "World" => {
+        "desktop-world" => {
           "Chrome" => "53",
           "Safari" => "15",
           "UC" => "8",
           "Firefox" => "6",
           "Other" => "18"
         },
-        "Screen Resolution" => {
-          "360 x 640" => "12",
-          "375 x 667" => "11",
-          "1366 x 768" => "10",
-          "1920 x 1080" => "9",
-          "768 x 1024" => "7"
+        "mobile-usa" => {
+          "Safari" => "51",
+          "Chrome" => "39",
+          "Samsung" => "6",
+          "Android" => "1",
+          "Other" => "3"
         },
-        "World Resolution" => {
-          "360 x 640" => "20",
-          "1366 x 768" => "13",
-          "1920 x 1080" => "7",
-          "375 x 667" => "5",
-          "720 x 1280" => "4"
+        "mobile-world" => {
+          "Chrome" => "50",
+          "Safari" => "18",
+          "UC" => "16",
+          "Samsung" => "7",
+          "Other" => "9"
         },
-        "last_update" => "May, 2017",
+        "last_update" => "July, 2017",
         "data_source" => {
           "name" => "Global Stats",
           "url" => "http://gs.statcounter.com/"
@@ -54,8 +54,13 @@ class GetBrowserData < Middleman::Extension
         "ie.svg"
       when "UC"
         "uc.svg"
+      when "Samsung"
+        "samsung.png"
+      when "Android"
+        "android.png"
       when "Other"
         "palmTreeIcon.svg"
+
       else
         # Won't happen
         ""
