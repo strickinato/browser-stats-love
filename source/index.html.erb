@@ -35,7 +35,7 @@ title: browserstats.love
               <% browser_data["desktop-usa"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
-                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="<%= browser %>"></td>
                 <td class="browser-card-browser-column"><%= browser.upcase %></td>
               </tr>
               <% end %>
@@ -55,7 +55,7 @@ title: browserstats.love
               <% browser_data["desktop-world"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
-                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="<%= browser %>"></td>
                 <td class="browser-card-browser-column"><%= browser.upcase %></td>
               </tr>
               <% end %>
@@ -84,7 +84,7 @@ title: browserstats.love
               <% browser_data["mobile-usa"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
-                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="<%= browser %>"></td>
                 <td class="browser-card-browser-column"><%= browser.upcase %></td>
               </tr>
               <% end %>
@@ -104,7 +104,7 @@ title: browserstats.love
               <% browser_data["mobile-world"].each do |browser, pct| %>
               <tr>
                 <td class="browser-card-percent-column"><%= pct %>%</td>
-                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="Chrome"></td>
+                <td class="browser-card-icon-column"><img src="assets/<%= get_asset(browser) %>" alt="<%= browser %>"></td>
                 <td class="browser-card-browser-column"><%= browser.upcase %></td>
               </tr>
               <% end %>
