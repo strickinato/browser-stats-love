@@ -32,7 +32,7 @@ class GetBrowserData < Middleman::Extension
           "Safari" => "18",
           "UC" => "15",
           "Samsung" => "7",
-          "Other" => "9"
+          "Other" => "10"
         },
         "last_update" => "November, 2017",
         "data_source" => {
