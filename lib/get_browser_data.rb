@@ -7,34 +7,34 @@ class GetBrowserData < Middleman::Extension
     def browser_data
       {
         "desktop-usa" => {
-          "Chrome" => "56",
-          "IE" => "14",
-          "Firefox" => "12",
+          "Chrome" => "57",
+          "IE" => "13",
+          "Firefox" => "11",
           "Safari" => "10",
-          "Other" => "8"
+          "Other" => "9"
         },
         "desktop-world" => {
-          "Chrome" => "53",
-          "Safari" => "15",
-          "UC" => "8",
-          "Firefox" => "6",
-          "Other" => "18"
+          "Chrome" => "64",
+          "Firefox" => "13",
+          "IE" => "8",
+          "Safari" => "6",
+          "Other" => "9"
         },
         "mobile-usa" => {
-          "Safari" => "51",
-          "Chrome" => "39",
+          "Safari" => "52",
+          "Chrome" => "38",
           "Samsung" => "6",
-          "Android" => "1",
+          "UC" => "1",
           "Other" => "3"
         },
         "mobile-world" => {
           "Chrome" => "50",
           "Safari" => "18",
-          "UC" => "16",
+          "UC" => "15",
           "Samsung" => "7",
           "Other" => "9"
         },
-        "last_update" => "July, 2017",
+        "last_update" => "November, 2017",
         "data_source" => {
           "name" => "Global Stats",
           "url" => "http://gs.statcounter.com/"
