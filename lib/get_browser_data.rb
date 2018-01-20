@@ -7,34 +7,34 @@ class GetBrowserData < Middleman::Extension
     def browser_data
       {
         "desktop-usa" => {
-          "Chrome" => "57",
-          "IE" => "13",
-          "Firefox" => "11",
-          "Safari" => "10",
-          "Other" => "9"
+          "Chrome" => "61",
+          "Safari" => "11",
+          "Firefox" => "10",
+          "IE" => "10",
+          "Other" => "8"
         },
         "desktop-world" => {
-          "Chrome" => "64",
-          "Firefox" => "13",
-          "IE" => "8",
+          "Chrome" => "66",
+          "Firefox" => "12",
+          "IE" => "7",
           "Safari" => "6",
           "Other" => "9"
         },
         "mobile-usa" => {
           "Safari" => "52",
-          "Chrome" => "38",
-          "Samsung" => "6",
-          "UC" => "1",
-          "Other" => "3"
+          "Chrome" => "41",
+          "Samsung" => "5",
+          "Android" => "1",
+          "Other" => "1"
         },
         "mobile-world" => {
           "Chrome" => "50",
           "Safari" => "18",
           "UC" => "15",
-          "Samsung" => "7",
-          "Other" => "10"
+          "Opera" => "6",
+          "Other" => "11"
         },
-        "last_update" => "November, 2017",
+        "last_update" => "January, 2018",
         "data_source" => {
           "name" => "Global Stats",
           "url" => "http://gs.statcounter.com/"
@@ -58,6 +58,8 @@ class GetBrowserData < Middleman::Extension
         "samsung.png"
       when "Android"
         "android.png"
+      when "Opera"
+        "Opera.svg"
       when "Other"
         "palmTreeIcon.svg"
 
